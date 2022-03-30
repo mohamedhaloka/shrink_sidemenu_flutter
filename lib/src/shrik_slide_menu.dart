@@ -26,8 +26,8 @@ class ShrinkSlideSideMenuState extends SideMenuState {
             alignment: Alignment.topLeft,
             transform: _getMatrix4(size),
             decoration: BoxDecoration(
-              borderRadius: _getBorderRadius(),
-            ),
+                borderRadius: _getBorderRadius(),
+                boxShadow: widget.boxShadow ?? []),
             child: _getChild(),
           ),
         ],

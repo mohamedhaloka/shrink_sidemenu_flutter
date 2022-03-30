@@ -41,6 +41,9 @@ class SideMenu extends StatefulWidget {
   /// Radius for the child when side menu opens
   final BorderRadius radius;
 
+  /// Shadow for the child when side menu opens
+  final List<BoxShadow> boxShadow;
+
   /// Close Icon
   final Icon closeIcon;
 
@@ -104,6 +107,7 @@ class SideMenu extends StatefulWidget {
       color: const Color(0xFFFFFFFF),
     ),
     this.menu,
+    this.boxShadow,
     this.type = SideMenuType.shrikNRotate,
     this.maxMenuWidth = 275.0,
     bool inverse = false,
